@@ -143,10 +143,78 @@ STU002,Vedansh,22:10:33,25/11/2025
 
 ## 🔧 Customization
 
-   #### Adjust Recognition Sensitivity
-   
+#### Adjust Recognition Sensitivity
    Modify the confidence threshold in start_attendance_system() function:
+         ```python
+         
+         if confidence < 70:  # Lower value = more strict recognition
 
-   ```python
-      if confidence < 70:  # Lower value = more strict recognition
+#### Change Photo Count
+   Modify max_photos in take_student_photos() function:
+         ```python
 
+         max_photos = 10  # Number of photos per student
+
+
+         
+## 🤝 Contributing
+
+   Contributions are welcome! Please feel free to submit pull requests or open issues for bugs and feature requests.
+
+   Development Setup
+   Fork the repository
+
+   Create a feature branch
+
+   Make your changes
+
+   Test thoroughly
+
+   Submit a pull request
+
+## 📝 License
+
+   #### This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 🐛 Troubleshooting
+
+   Common Issues
+   Webcam not detected
+
+   Check if webcam is connected and not used by other applications
+
+   Try changing camera index: cv2.VideoCapture(1)
+
+   Face recognition accuracy low
+
+   Ensure good lighting conditions
+
+   Capture more training photos from different angles
+
+   Adjust confidence threshold
+
+   Module not found errors
+
+   Install required packages: pip install opencv-contrib-python numpy pandas
+
+## 📞 Support
+
+   If you encounter any issues or have questions:
+
+   Check the Issues page
+
+   Create a new issue with detailed description
+
+   Provide system specifications and error logs
+
+## 🙏 Acknowledgments
+
+   OpenCV community for excellent computer vision library
+
+   Python community for robust ecosystem
+
+   Contributors and testers of this project
+
+### ⭐ If you find this project useful, please give it a star on GitHub!
+
+   ### Built with ❤️ using Python and OpenCV
